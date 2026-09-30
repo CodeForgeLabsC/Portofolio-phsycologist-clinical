@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ivory: #f5f1e9;
+  --color-ink: #25333c;
+  --color-ink-soft: #3c4e59;
+  --color-terracotta: #a95742;
+  --color-olive: #e5e7dc;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), "Iowan Old Style", Palatino, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #f5f1e9;
+  color-scheme: light;
+}
+
+body {
+  background: #f5f1e9;
+  color: #25333c;
+  font-family: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+::selection {
+  background: #a95742;
+  color: #f5f1e9;
+}
+
+:focus-visible {
+  outline: 2px solid #a95742;
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.65rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise {
+    animation: rise 0.75s ease both;
+  }
+
+  .rise-delay-1 {
+    animation-delay: 0.08s;
+  }
+
+  .rise-delay-2 {
+    animation-delay: 0.16s;
+  }
+
+  .rise-delay-3 {
+    animation-delay: 0.26s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
