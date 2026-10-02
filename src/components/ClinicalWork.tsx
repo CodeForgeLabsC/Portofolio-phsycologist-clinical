@@ -3,8 +3,6 @@ import { Section } from "@/components/Section";
 import { drafts } from "@/content/site";
 
 export function ClinicalWork() {
-  const hasDrafts = drafts.focusAreas.some((area) => area.status === "draft");
-
   return (
     <Section id="work" labelledBy="work-heading">
       <p className="text-[0.72rem] font-medium uppercase tracking-[0.18em] text-ink-soft">
@@ -16,11 +14,9 @@ export function ClinicalWork() {
       >
         What brings you here?
       </h2>
-      {hasDrafts ? (
-        <p className="mt-8 max-w-[46ch] text-base leading-relaxed text-ink-soft">
-          {drafts.workDisclaimer}
-        </p>
-      ) : null}
+      <p className="mt-8 max-w-[42ch] text-base leading-relaxed text-ink">
+        {drafts.workDisclaimer}
+      </p>
 
       <ol className="mt-12 border-b border-ink/15">
         {drafts.focusAreas.map((area, index) => (
@@ -39,13 +35,12 @@ export function ClinicalWork() {
               </p>
               <div className="md:col-span-9 md:col-start-4">
                 {area.status === "draft" ? <DraftMark>Draft</DraftMark> : null}
-                <h3 className="mt-3 font-serif text-[clamp(1.7rem,3vw,2.4rem)] leading-tight tracking-[-0.02em] text-ink">
+                <h3 className="font-serif text-[clamp(1.7rem,3vw,2.4rem)] leading-tight tracking-[-0.02em] text-ink">
                   {area.area}
                 </h3>
-                <p className="mt-6 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-ink-soft">
-                  Who the work is for
+                <p className="mt-4 max-w-[46ch] font-serif text-lg leading-snug tracking-[-0.02em] text-ink-soft">
+                  {area.audience}
                 </p>
-                <p className="mt-2 text-base leading-relaxed text-ink">{area.audience}</p>
                 <p className="mt-4 max-w-[52ch] text-base leading-relaxed text-ink-soft">
                   {area.description}
                 </p>

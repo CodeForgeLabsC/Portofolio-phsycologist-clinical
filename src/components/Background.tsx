@@ -13,7 +13,7 @@ export function Background() {
         id="background-heading"
         className="mt-6 max-w-[14ch] font-serif text-[clamp(2.4rem,6.4vw,4.6rem)] leading-[1.02] tracking-[-0.03em] text-ink"
       >
-        The work behind the work.
+        What it is like to come.
       </h2>
       <ol className="mt-12 max-w-3xl border-l border-ink/20">
         {verified.background.map((entry) => (

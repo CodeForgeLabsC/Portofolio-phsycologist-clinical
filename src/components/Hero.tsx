@@ -11,20 +11,21 @@ export function Hero() {
           <span className="hidden px-2 text-terracotta sm:inline" aria-hidden="true">
             /
           </span>
-          <span className="mt-1 block sm:mt-0 sm:inline">{profile.role}</span>
+          <span className="mt-1 block sm:mt-0 sm:inline">
+            {profile.role}, private practice
+          </span>
         </p>
         <h1 className="rise rise-delay-1 mt-6 max-w-[12em] font-serif text-[clamp(2.7rem,7.2vw,5.15rem)] leading-[0.94] tracking-[-0.035em] text-pretty text-ink">
           <span className="block">Room to think.</span>
-          <span className="mt-1 block">Space to be yourself.</span>
+          <span className="mt-1 block">Nothing to perform.</span>
         </h1>
         <p className="rise rise-delay-2 mt-8 max-w-[34ch] text-lg leading-relaxed text-ink sm:text-xl">
-          You don’t need to have everything figured out before starting a
-          conversation.
+          Psychotherapy for adults who are done spending the week braced.
         </p>
         <div className="rise rise-delay-3 mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
           <a
             href={primaryAction.href}
-            className="inline-flex min-h-12 items-center justify-center bg-ink px-5 text-base text-ivory transition-colors hover:bg-[#31424c]"
+            className="inline-flex min-h-12 items-center justify-center bg-ink px-5 text-base text-ivory transition-colors hover:bg-[#3a4742]"
           >
             {primaryAction.label}
           </a>
@@ -32,7 +33,7 @@ export function Hero() {
             href="/#about"
             className="inline-flex min-h-12 items-center text-base text-ink underline decoration-terracotta decoration-1 underline-offset-[6px] hover:decoration-ink"
           >
-            Meet Richia
+            How the work goes
           </a>
         </div>
       </div>
@@ -75,7 +76,9 @@ export function Hero() {
           </DoorwayFrame>
         </div>
         <figcaption className="mt-4 text-sm leading-relaxed text-ink-soft">
-          {verified.portrait ? profile.name : "A portrait will be placed here when one is supplied."}
+          {verified.portrait
+            ? "Richia Martinez, in the practice."
+            : "A portrait will be placed here when one is supplied."}
         </figcaption>
       </figure>
     </div>
