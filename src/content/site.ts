@@ -157,7 +157,7 @@ export const drafts = {
       description:
         "The decision was right and it still feels thin. You are competent in the new room and lonely after it. This is not a coaching program. It is a place to tell the truth about a beginning that was supposed to feel better than this.",
     },
-  ] satisfies FocusArea[],
+  ] as FocusArea[],
   approach: {
     reviewed: true,
     note: "I work in plain language. We stay with what actually happened in the week, not a theory you have to learn.",
