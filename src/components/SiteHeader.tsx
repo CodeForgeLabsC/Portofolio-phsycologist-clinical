@@ -59,7 +59,7 @@ export function SiteHeader() {
           ))}
           <a
             href={primaryAction.href}
-            className="inline-flex min-h-11 items-center bg-ink px-4 text-sm text-ivory transition-colors hover:bg-[#31424c]"
+            className="inline-flex min-h-11 items-center bg-ink px-4 text-sm text-ivory transition-colors hover:bg-[#3a4742]"
           >
             {primaryAction.label}
           </a>

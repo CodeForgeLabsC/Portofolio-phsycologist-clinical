@@ -62,7 +62,7 @@ export function Questions() {
             id="questions-heading"
             className="mt-6 font-serif text-[clamp(2.4rem,6.4vw,4.2rem)] leading-[1.02] tracking-[-0.03em] text-ink"
           >
-            Practical questions.
+            Before you write.
           </h2>
         </div>
         <div className="border-b border-ink/15 lg:col-span-7 lg:col-start-6">

@@ -140,7 +140,7 @@ export function ContactForm({ enabled }: { enabled: boolean }) {
           disabled={!enabled || pending}
           className={`inline-flex min-h-12 items-center justify-center px-5 text-base transition-colors disabled:cursor-not-allowed ${
             enabled
-              ? "bg-ink text-ivory hover:bg-[#31424c] disabled:opacity-70"
+              ? "bg-ink text-ivory hover:bg-[#3a4742] disabled:opacity-70"
               : "border border-ink/30 bg-transparent text-ink"
           }`}
         >

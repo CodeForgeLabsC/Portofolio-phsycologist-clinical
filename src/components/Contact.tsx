@@ -16,10 +16,11 @@ export function Contact() {
             id="contact-heading"
             className="mt-6 font-serif text-[clamp(2.4rem,6.4vw,4.4rem)] leading-[1.02] tracking-[-0.03em] text-ink"
           >
-            Start with a simple hello.
+            Write when you are ready.
           </h2>
           <p className="mt-6 max-w-[36ch] text-base leading-relaxed text-ink">
-            A name and an email are enough to ask about availability.
+            A name, an email, and one honest sentence. I will tell you if I have
+            room for a first conversation.
           </p>
           {verified.email ? (
             <p className="mt-6 text-base leading-relaxed text-ink">

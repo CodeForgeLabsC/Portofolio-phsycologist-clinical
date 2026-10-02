@@ -17,14 +17,16 @@ export function Approach() {
               id="approach-heading"
               className="mt-6 font-serif text-[clamp(2.4rem,6.4vw,4.4rem)] leading-[1.02] tracking-[-0.03em] text-ink"
             >
-              How we might work together.
+              How a week with me actually goes.
             </h2>
-            {approach.reviewed ? null : (
-              <p className="mt-8 max-w-[36ch] text-base leading-relaxed text-ink">
-                <DraftMark>For review</DraftMark>
-                <span className="mt-3 block">{approach.note}</span>
-              </p>
-            )}
+            <p className="mt-8 max-w-[34ch] text-base leading-relaxed text-ink">
+              {approach.reviewed ? null : (
+                <span className="mb-3 block">
+                  <DraftMark>For review</DraftMark>
+                </span>
+              )}
+              {approach.note}
+            </p>
           </div>
 
           <ol className="lg:col-span-7">

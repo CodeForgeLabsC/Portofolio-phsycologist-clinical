@@ -15,11 +15,13 @@ export function Introduction() {
           id="about-heading"
           className="font-serif text-[clamp(2.35rem,6vw,4.5rem)] leading-[1.02] tracking-[-0.03em] text-ink text-balance lg:col-span-8"
         >
-          A person before a professional profile.
+          A small practice, on purpose.
         </h2>
-        <p className="lg:col-span-3 lg:col-start-10 lg:pt-3">
-          {biography.supplied ? null : <DraftMark>{biography.annotation}</DraftMark>}
-        </p>
+        {biography.supplied ? null : (
+          <p className="lg:col-span-3 lg:col-start-10 lg:pt-3">
+            <DraftMark>{biography.annotation}</DraftMark>
+          </p>
+        )}
       </div>
 
       <div className="mt-12 grid gap-8 lg:grid-cols-12">

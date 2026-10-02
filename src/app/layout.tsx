@@ -18,7 +18,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Richia Martinez, Clinical Psychologist",
   description:
-    "Room to think. Space to be yourself. You don’t need to have everything figured out before starting a conversation.",
+    "Richia Martinez is a clinical psychologist in private practice. Psychotherapy for adults carrying worry, grief, and relationships that keep repeating.",
 };
 
 export const dynamic = "force-dynamic";
